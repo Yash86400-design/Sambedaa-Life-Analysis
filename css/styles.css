@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: #00abb3; */
+  /* background: #F3FAEC; */
+  /* background: rgba(221, 216, 210, 255); */
+  /* margin: 20px; */
+  background: linear-gradient(to left, #fbda61, #f394d6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h2 {
+  color: var(--clr);
+}
+
+/* .first-grid {
+  margin: 15px 0 30px 0;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+} */
+
+.card {
+  margin-top: 100px;
+  position: relative;
+  width: 350px;
+  height: 190px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+}
+
+.card:hover {
+  height: 450px;
+}
+
+
+.imgBx {
+  position: relative;
+  left: 50%;
+  top: -50px;
+  transform: translateX(-50%);
+  height: 150px;
+  width: 150px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.card:hover .imgBx {
+  width: 250px;
+  height: 250px;
+}
+
+.imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.card .content .details {
+  padding: 40px;
+  text-align: center;
+  width: 100%;
+  transition: 0.5s;
+  transform: translateY(150px);
+}
+
+.card:hover .content .details {
+  transform: translateY(0px);
+}
+
+
+.card .content .details h2 {
+  font-size: 1.25em;
+  font-weight: 600;
+  color: #555;
+  line-height: 1.2em;
+}
+
+.card .content .details h2 span {
+  font-size: 0.75em;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+.card .content .details .data {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.card .content .details .data h3 {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.2em;
+  font-weight: 600;
+}
+
+.card .content .details .data h3 span {
+  font-size: 0.85em;
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+.card .content .details .actionBtn {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 20px; */
+}
+
+.card .content .details .actionBtn button {
+  /* padding: 10px 30px; */
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  font-weight: 500;
+  background: #ff5f95;
+  color: #fff;
+  cursor: pointer;
+}
+
+.card .content .details .actionBtn button:nth-child(2) {
+  border: 1px solid #999;
+  color: #999;
+  background: #fff;
+}
+
+
+
+
+#her__name {
+  background-color: #ff8177;
+  /* background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%); */
+  background-image: linear-gradient(to right, #7ae911 0%, #c66b32 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.first-grid img {
+  width: 20%;
+  height: 20%;
+  border-radius: 30px;
+}
+
+hr {
+  /* height: 10px; */
+  width: 100px;
+  border-style: dotted;
+  border-color: indianred;
+  border-width: 0.5em;
+  border-top: 0;
+  margin: 20px auto;
+}
+
+.second-grid {
+  display: flex;
+  /* text-align: center; */
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0 10px 0;
+}
+
+.second-grid .card {
+  margin: 0;
+}
+
+.features {
+  background: #131313;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 10rem 0;
+}
+
+.features h1 {
+  background-color: #ff8177;
+  background-image: linear-gradient(to right, #ff0844 0%, #f7673c 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 5rem;
+  font-size: 2.5rem;
+}
+
+.features__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.features__card {
+  margin: 5px;
+  height: 425px;
+  width: 270px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  background-image: linear-gradient(to right, #00dbde 0%, #fc00ff);
+  transition: 0.3s ease-in;
+}
+
+.features__card:nth-child(2) {
+  background: #1fa2ff;
+  background: -webkit-linear-gradient(to right, #a6ffcb, #12d8fa, #1fa2ff);
+  background: linear-gradient(to right, #a6ffcb, #12d8fa, #1fa2ff);
+}
+
+.features__card:nth-child(3) {
+  background-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800);
+}
+
+.features__card h2 {
+  text-align: center;
+}
+
+.features__card p {
+  text-align: center;
+  margin-top: 12px;
+  /* Earlier it was 24. */
+  font-size: 20px;
+}
+
+.features__btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.features__card button {
+  color: #fff;
+  padding: 14px 24px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #131313;
+  font-size: 1rem;
+}
+
+.features__card button:hover {
+  cursor: pointer;
+}
+
+.features__card:hover {
+  transform: scale(1.075);
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.hate {
+  margin: 20px 0;
+}
+
+.hate h1 {
+  background-color: #231557;
+  background-image: linear-gradient(to bottom, #c54848 0%, #18667d 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-size: 2.5rem;
+}
+
+.love {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #eff0f4;
+}
+
+.mycontainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 0;
+  gap: 40px 60px;
+}
+
+.mycontainer .mydrop {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05), 25px 35px 20px rgba(0, 0, 0, 0.05),
+    25px 30px 30px rgba(0, 0, 0, 0.5),
+    inset -20px -20px 25px rgba(255, 255, 255, 0.9);
+  transition: 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mycontainer .mydrop:nth-child(1) {
+  border-radius: 57% 43% 43% 57% / 43% 43% 57% 57%;
+}
+
+.mycontainer .mydrop:nth-child(2) {
+  border-radius: 61% 39% 52% 48% / 44% 59% 41% 56%;
+}
+
+.mycontainer .mydrop:nth-child(3) {
+  border-radius: 35% 65% 31% 69% / 57% 59% 41% 43%;
+}
+
+.mycontainer .mydrop:nth-child(5) {
+  border-radius: 55% 45% 47% 53% / 30% 51% 49% 70%;
+}
+
+.mycontainer .mydrop:hover {
+  border-radius: 50%;
+}
+
+.mycontainer .mydrop::before {
+  /* it's just for that dot, basically giving a shape to container who has no content. */
+  content: '';
+  position: absolute;
+  top: 50px;
+  left: 85px;
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0.9;
+}
+
+.mycontainer .mydrop::after {
+  content: '';
+  position: absolute;
+  top: 90px;
+  left: 110px;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0.9;
+}
+
+.mycontainer .mydrop .mycontent {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 40px;
+  gap: 15px;
+}
+
+.mycontainer .mydrop .mycontent h2 {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background: #eff0f4;
+  border-radius: 50%;
+  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.1), inset -2px -5px 10px rgba(255, 255, 255, 1), 15px 15px 10px rgba(0, 0, 0, 0.05), 15px 10px 15px rgba(0, 0, 0, 0.025);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: var(--clr);
+}
+
+.mycontainer .mydrop .mycontent h6 {
+  position: relative;
+  padding: 10px 25px;
+  background: var(--clr);
+  /* text-decoration: none; */
+  color: #fff;
+  border-radius: 25px;
+  font-weight: 500;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+  opacity: 0.75;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.mycontainer .mydrop .mycontent a:hover {
+  opacity: 1;
+}
+
+.mycontainer .mydrop .mycontent a::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 68px;
+  transform: translateX(-50%);
+  width: 65%;
+  height: 5px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.5);
+}
